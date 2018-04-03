@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:robobunny="http://robobunny.com"
+    android:key="@string/prefs_reader_setting"
+    android:title="@string/reader_setting" >
+
+    <PreferenceCategory
+        android:key="@string/prefs_reader_setting_basic"
+        android:title="@string/basic_info" >
+        <com.robobunny.SeekBarPreference            
+            android:key="@string/prefs_reader_volume"
+            android:max="15"
+            android:summary=""
+            android:title="Volume"
+            robobunny:min="1"
+            robobunny:unitsLeft=""
+            robobunny:unitsRight="%" />
+    </PreferenceCategory>
+</PreferenceScreen>

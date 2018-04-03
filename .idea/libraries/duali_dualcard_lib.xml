@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="duali_dualcard_lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/duali_dualcard_lib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

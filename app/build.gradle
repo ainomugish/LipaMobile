@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.duali.itouchpop2_test"
+        minSdkVersion 14
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile 'com.android.support:support-v4:19.1.0'
+    /*compile 'com.android.support:recyclerview-v7:19.0.0'
+    compile 'com.android.support:cardview-v7:19.0.0'*/
+    compile files('libs/core.jar')
+    compile files('libs/duali_dualcard_lib.jar')
+    compile files('libs/duali_io_lib.jar')
+    compile files('libs/jow_ct.jar')
+    compile files('libs/nfc-lib.jar')
+    compile 'com.github.satyan:sugar:1.4'
+    compile 'me.drakeet.materialdialog:library:1.2.3'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.path:android-priority-jobqueue:1.1.2'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile files('libs/jsr305-1.3.9.jar')
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile 'com.squareup.okhttp3:okhttp:3.0.1'
+    compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2'
+    // http://mvnrepository.com/artifact/joda-time/joda-time
+    compile group: 'joda-time', name: 'joda-time', version: '2.1'
+
+
+
+
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jow_ct">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/jow_ct.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

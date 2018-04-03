@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="8"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:visibility="invisible"
+            android:id="@+id/tbtn_rfa"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textOff="@string/rfa_off"
+            android:textOn="@string/rfa_on" />
+
+        <!--CHANGE DEVICE NAME-->
+        <Button
+            android:id="@+id/change_device_name_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:text="CHGE DEV NAM" />
+
+        <!--CHANGE PARTNER DEVICE NAME-->
+        <Button
+            android:id="@+id/change_partner_device_name_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:text="CHGE PTNR DEV NAM" />
+
+
+        <ToggleButton
+            android:id="@+id/sync_students_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textOff="SYNC STUDENTS"
+            android:textOn="SYNC STUDENTS" />
+
+        <ToggleButton
+            android:id="@+id/gate_pass_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textOff="GATE PASS"
+            android:textOn="GATE PASS" />
+
+        <ToggleButton
+            android:id="@+id/canteen_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textOff="CANTEEN"
+            android:textOn="CANTEEN" />
+
+        <ToggleButton
+            android:id="@+id/btn_p2p"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textOff="SEARCH"
+            android:visibility="gone"
+            android:textOn="SEARCH" />
+
+        <Button
+            android:id="@+id/sync_pin_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:text="SYNC PINS" />
+
+        <Button
+            android:id="@+id/reset_students_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:onClick="startSearch"
+            android:text="RESET STNDTS" />
+        <!--<Button
+            android:id="@+id/sync_meal_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:text="SYNC MEALS" />-->
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/exit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!--NUM STUDENTS HOLDER-->
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/numStudentsTextViewLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="NUM STUDENTS ON DEVICE:" />
+
+                <TextView
+                    android:id="@+id/numStudentsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="NUM-STUDENTS" />
+            </LinearLayout>
+
+            <!--VERSION-->
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="VERSION"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="device_name"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/partner_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="partner_device_name"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!--CONNECTED-->
+            <TextView
+                android:id="@+id/connected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Disconnected"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="25dp"
+                android:orientation="horizontal">
+
+                <!--BUTTON AND PROGRESS LAYOUT-->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <Button
+                        android:id="@+id/new_trans_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="START NEW TRANSACTION"/>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/getCardProgressBar"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="25dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/new_meal_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="START MEAL TXN"/>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/getMealProgressBar"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="25dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/new_pass_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:clickable="true"
+                        android:text="START GATE PASS"/>
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/getPassProgressBar"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+
+
+                <EditText
+                    android:id="@+id/edit_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="textMultiLine" >
+
+                    <requestFocus />
+                </EditText>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.duali.itouchpop2_test.DevicesActivity">
+
+    <item
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/atn_direct_discover"
+        android:title="@string/discover_peers_button"
+        app:showAsAction="ifRoom|withText"/>
+</menu>

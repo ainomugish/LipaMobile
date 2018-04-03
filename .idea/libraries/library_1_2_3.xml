@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="library-1.2.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.drakeet.materialdialog/library/1.2.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.drakeet.materialdialog/library/1.2.3/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.drakeet.materialdialog/library/1.2.3/192d25f2a4fe8db1a360547c6db1529e0a4ec923/library-1.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
